@@ -103,9 +103,7 @@ const Navbar = ({ title, link }) => {
             >
               Recomended Anime
             </a>
-            <div>
-              <Search />
-            </div>
+            <Search />
           </div>
         </div>
       )}
