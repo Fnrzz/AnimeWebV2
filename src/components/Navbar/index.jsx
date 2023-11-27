@@ -72,7 +72,7 @@ const Navbar = ({ title, link }) => {
       {/* Mobile menu, show/hide based on menu state. */}
       {isMobile && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 px-2 pb-3 pt-2 max-w-[100vw]">
             <a
               href="/"
               className={`${
