@@ -12,7 +12,7 @@ const CardList = ({ dataAnime }) => {
             alt="Picture of the author"
             width={159}
             height={159}
-            className="rounded-[8px] hover:scale-105 transition-all w-[160px] h-[200px] duration-300 hover:cursor-pointer"
+            className="rounded-[8px] hover:scale-105 transition-all md:w-[160px] md:h-[200px] w-[150px] h-[180px] duration-300 hover:cursor-pointer"
           />
         </Link>
       ))}
