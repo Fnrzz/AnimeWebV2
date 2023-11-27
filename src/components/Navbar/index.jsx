@@ -72,39 +72,47 @@ const Navbar = ({ title, link }) => {
       {/* Mobile menu, show/hide based on menu state. */}
       {isMobile && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2 w-[100vw]">
-            <a
-              href="/"
-              className={`${
-                pathname === "/"
-                  ? "bg-mycolor-primary "
-                  : "hover:text-mycolor-primary"
-              } block rounded-md px-3 py-2 text-white font-medium`}
-            >
-              All
-            </a>
-            <a
-              href="/top/anime"
-              className={`${
-                pathname === "/top/anime"
-                  ? "bg-mycolor-primary "
-                  : "hover:text-mycolor-primary"
-              } block rounded-md px-3 py-2 text-white font-medium`}
-            >
-              Top Anime
-            </a>
-            <a
-              href="/recomended/anime"
-              className={`${
-                pathname === "/recomended/anime"
-                  ? "bg-mycolor-primary "
-                  : "hover:text-mycolor-primary"
-              } block rounded-md px-3 py-2 text-white font-medium`}
-            >
-              Recomended Anime
-            </a>
-            <Search />
-          </div>
+          <ul className="space-y-1 px-2 pb-3 pt-2 ">
+            <li>
+              <a
+                href="/"
+                className={`${
+                  pathname === "/"
+                    ? "bg-mycolor-primary "
+                    : "hover:text-mycolor-primary"
+                } block rounded-md px-3 py-2 text-white font-medium`}
+              >
+                All
+              </a>
+            </li>
+            <li>
+              <a
+                href="/top/anime"
+                className={`${
+                  pathname === "/top/anime"
+                    ? "bg-mycolor-primary "
+                    : "hover:text-mycolor-primary"
+                } block rounded-md px-3 py-2 text-white font-medium`}
+              >
+                Top Anime
+              </a>
+            </li>
+            <li>
+              <a
+                href="/recomended/anime"
+                className={`${
+                  pathname === "/recomended/anime"
+                    ? "bg-mycolor-primary "
+                    : "hover:text-mycolor-primary"
+                } block rounded-md px-3 py-2 text-white font-medium`}
+              >
+                Recomended Anime
+              </a>
+            </li>
+            <li>
+              <Search />
+            </li>
+          </ul>
         </div>
       )}
     </nav>
