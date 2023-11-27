@@ -103,7 +103,7 @@ const Navbar = ({ title, link }) => {
             >
               Recomended Anime
             </a>
-            <div className="flex justify-center">
+            <div>
               <Search />
             </div>
           </div>
