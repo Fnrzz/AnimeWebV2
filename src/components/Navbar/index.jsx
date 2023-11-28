@@ -72,8 +72,8 @@ const Navbar = ({ title, link }) => {
       {/* Mobile menu, show/hide based on menu state. */}
       {isMobile && (
         <div className="md:hidden" id="mobile-menu">
-          <ul className="space-y-1 px-2 pb-3 pt-2 ">
-            <li>
+          <ul className=" px-2 pb-3 pt-2 ">
+            <li className="mt-3">
               <a
                 href="/"
                 className={`${
@@ -85,7 +85,7 @@ const Navbar = ({ title, link }) => {
                 All
               </a>
             </li>
-            <li>
+            <li className="mt-3">
               <a
                 href="/top/anime"
                 className={`${
@@ -97,7 +97,7 @@ const Navbar = ({ title, link }) => {
                 Top Anime
               </a>
             </li>
-            <li>
+            <li className="mt-3">
               <a
                 href="/recomended/anime"
                 className={`${
@@ -109,7 +109,7 @@ const Navbar = ({ title, link }) => {
                 Recomended Anime
               </a>
             </li>
-            <li>
+            <li className="mt-3">
               <Search />
             </li>
           </ul>
