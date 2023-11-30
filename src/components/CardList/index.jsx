@@ -6,7 +6,7 @@ const CardList = ({ dataAnime }) => {
   return (
     <div className="flex flex-wrap gap-4 md:justify-between justify-center">
       {dataAnime.data?.map((anime, key) => (
-        <Link href={`/detail/${anime.mal_id}`} key={key}>
+        <Link href={`/anime/${anime.mal_id}`} key={key}>
           <Image
             src={anime.images.jpg.image_url}
             alt="Picture of the author"

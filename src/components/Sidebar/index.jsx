@@ -28,7 +28,7 @@ const Sidebar = () => {
         <Link
           href="/browse"
           className={`text-[20px] px-[8px] py-[4px] flex items-end w-full  ${
-            pathname.startsWith("/browse")
+            pathname.startsWith("/browse") || pathname.startsWith("/anime")
               ? "bg-white rounded-[8px] font-bold text-mycolor-primary"
               : "text-white"
           }`}

@@ -26,7 +26,7 @@ const Banner = async () => {
       </p>
       <div className="flex">
         <Link
-          href={`/detail/${dataAnime.mal_id}`}
+          href={`/anime/${dataAnime.mal_id}`}
           className="bg-mycolor-tertiary px-[16px] hover:bg-mycolor-primary   py-[8px] text-sm md:text-md text-white border-inner border-white border-[2px] rounded-[8px]"
         >
           Detail Anime
